@@ -20,12 +20,11 @@
     >
       <p>{{ text }}</p>
     </div>
-    <div 
+   <div 
       class="size-quantity"
       :class="{'size-quantity--disabled' : disabled}"
-      v-if="quantity"
     >
-      <p>{{ quantity }}</p>
+      <p>{{ quantity || '\u00A0' }}</p>
     </div>
   </div>
 </template>
@@ -50,11 +49,13 @@
     font-size: 10px;
     line-height: 14px;
     text-transform: uppercase;
+    cursor: pointer;
   }
 
   .size-block--disabled {
     border: 1px solid #BDBDBD;
     color: #BDBDBD;
+    cursor: auto;
   }
 
   .size-quantity--disabled {

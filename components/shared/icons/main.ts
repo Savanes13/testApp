@@ -14,6 +14,10 @@ export let mainIcons:Record<string, string> = {
 
   basket: '<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">' +
   '<path fill-rule="evenodd" clip-rule="evenodd" d="M6.25 7.03227V9.03012L7.0625 9.03063V7.03278L11.913 7.03227V9.03012H12.7449V7.03227H15.1333V15.2099H3.86667V7.03227H6.25ZM12.7449 6.24269L16 6.24218V16H3V6.24218H6.25C6.36768 4.67208 7.78977 3 9.4001 3C11.0268 3 12.5862 4.63637 12.7449 6.24269ZM11.913 6.24218C11.7753 5.08635 10.58 3.79009 9.4001 3.79009C8.11886 3.79009 7.16287 5.08438 7.0625 6.24218H11.913Z" fill="black"/>' +
+  '</svg>',
+
+  stroke: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">' +
+  '<path fill-rule="evenodd" clip-rule="evenodd" d="M5.5 4H18.5V21.4819L12.0134 17.1182L5.5 21.4819V4ZM6.5 5V19.5181L12.0134 15.8818L17.5 19.5181V5H6.5Z" fill="black"/>' +
   '</svg>'
 };
 

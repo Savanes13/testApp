@@ -61,4 +61,13 @@ import { mainIcons } from '~/components/shared/icons/main';
     align-items: center;
     gap: 16px;
   }
+
+  .active-item {
+    cursor: pointer;
+    transition: 0.5s ease;
+  }
+
+  .active-item:hover ::v-deep svg path {
+    fill: rgb(90, 90, 90);
+  }
 </style>
