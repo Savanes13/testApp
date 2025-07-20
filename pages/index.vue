@@ -7,6 +7,7 @@ import { mainIcons } from '~/components/shared/icons/main';
 import DefaultButton from '~/components/shared/ui/buttons/DefaultButton.vue';
 import ProductSize from '~/components/shared/ui/size/ProductSize.vue';
 import ProductColor from '~/components/shared/ui/color/ProductColor.vue';
+import DefaultSelect from '~/components/shared/ui/select/DefaultSelect.vue';
 </script>
 
 <template>
@@ -98,7 +99,12 @@ import ProductColor from '~/components/shared/ui/color/ProductColor.vue';
         </div>
 
         <div class="info-block__select-block">
-          
+          <DefaultSelect
+            text="Описание"
+          />
+          <DefaultSelect
+            text="Состав и уход"
+          />
         </div>
       </div>
 
@@ -189,6 +195,22 @@ import ProductColor from '~/components/shared/ui/color/ProductColor.vue';
     height: 693px;
   }
 
+  .info-block__name {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+
+  .info-block__price {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: uppercase;
+    margin-bottom: 31px;
+  }
+
   .all-image {
     display: flex;
     flex-direction: column;
@@ -201,8 +223,16 @@ import ProductColor from '~/components/shared/ui/color/ProductColor.vue';
     height: 88px;
   }
 
-  .sizes-name {
+  .info-block__size-block {
+    margin-bottom: 36px;
+  }
 
+  .sizes-name {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 14px;
+    color: #4F4F4F;
+    margin-bottom: 8px;
   }
 
   .sizes-items {
@@ -211,11 +241,24 @@ import ProductColor from '~/components/shared/ui/color/ProductColor.vue';
     gap: 14px;
   }
 
+  .info-block__colors-block {
+    margin-bottom: 36px;
+  }
+
+  .colors-name {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 14px;
+    color: #4F4F4F;
+    margin-bottom: 6px;
+  }
+
 
   .info-block__buttons-block {
     display: flex;
     align-items: center;
     gap: 10px;
+    margin-bottom: 40px;
   }
 
   .add-button {
