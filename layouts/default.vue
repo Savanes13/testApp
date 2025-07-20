@@ -4,35 +4,39 @@ import { mainIcons } from '~/components/shared/icons/main';
 </script>
 
 <template>
-  <div class="nav">
-    <div class="nav__logo">
-      <span
-        v-html="logoIcons['mainLogo']"
-      >
-      </span>
+  <div class="default-layout">
+    <div class="nav">
+      <div class="nav__logo">
+        <span
+          v-html="logoIcons['mainLogo']"
+        >
+        </span>
+      </div>
+      <div class="nav__items">
+        <div class="active-item">
+          <span
+            v-html="mainIcons['search']"
+          ></span>
+        </div>
+        <div class="active-item">
+          <span
+            v-html="mainIcons['favorite']"
+          ></span>
+        </div>
+        <div class="active-item">
+          <span
+            v-html="mainIcons['user']"
+          ></span>
+        </div>
+        <div class="active-item">
+          <span
+            v-html="mainIcons['basket']"
+          ></span>
+        </div>
+      </div>
     </div>
-    <div class="nav__items">
-      <div class="active-item">
-        <span
-          v-html="mainIcons['search']"
-        ></span>
-      </div>
-      <div class="active-item">
-        <span
-          v-html="mainIcons['favorite']"
-        ></span>
-      </div>
-      <div class="active-item">
-        <span
-          v-html="mainIcons['user']"
-        ></span>
-      </div>
-      <div class="active-item">
-        <span
-          v-html="mainIcons['basket']"
-        ></span>
-      </div>
-    </div>
+  
+     <slot />
   </div>
 </template>
 

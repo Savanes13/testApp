@@ -1,0 +1,35 @@
+$path: '~/assets/fonts/Helvetica';
+
+@function map-weight($weight) {
+  @return if(
+      $weight == 'Thin', 200,
+      if(
+          $weight == 'ExtraLight', 300,
+          if(
+              $weight == 'Light', 400,
+              if(
+                  $weight == 'Roman', 500,
+                  if(
+                      $weight == 'Medium', 600,
+                      if($weight == 'Bold', 700, null)
+                  )
+              )
+          )
+      )
+  );
+}
+
+@each $weight in (
+  Thin,
+  Light,
+  Roman,
+  Medium,
+  Bold,
+) {
+  @font-face {
+    font-family: 'HelveticaNeue';
+    src: url("#{$path}/HelveticaNeue-#{$weight}.otf") format('opentype');
+    font-weight: map-weight($weight);
+    font-style: normal;
+  }
+}
