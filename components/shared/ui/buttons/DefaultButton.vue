@@ -29,6 +29,7 @@
     line-height: 15px;
     text-transform: uppercase;
     transition: 0.5s ease;
+    cursor: pointer;
   }
 
   .button:hover {

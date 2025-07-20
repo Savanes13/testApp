@@ -6,6 +6,7 @@ import ThirdSmallImage from '~/assets/images/smallimages/Image3.png';
 import { mainIcons } from '~/components/shared/icons/main';
 import DefaultButton from '~/components/shared/ui/buttons/DefaultButton.vue';
 import ProductSize from '~/components/shared/ui/size/ProductSize.vue';
+import ProductColor from '~/components/shared/ui/color/ProductColor.vue';
 </script>
 
 <template>
@@ -69,8 +70,17 @@ import ProductSize from '~/components/shared/ui/size/ProductSize.vue';
           <div class="colors-name">
             <p>Цвет: белый</p>
           </div>
-          <div>
-            
+          <div class="colors-items">
+            <ProductColor
+              color="#FFFFFF"
+              :active="true"
+            />
+            <ProductColor
+              color="#000000"
+            />
+            <ProductColor
+              color="#F9F1DC"
+            />
           </div>
         </div>
 
@@ -220,9 +230,22 @@ import ProductSize from '~/components/shared/ui/size/ProductSize.vue';
     height: 44px;
     border: 1px solid #000000;
     transition: 0.5s ease;
+    cursor: pointer;
   }
 
   .favorite-button:hover {
     background: rgb(241, 241, 241);
   }
+
+
+
+
+
+  .colors-items {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+
 </style>
