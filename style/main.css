@@ -1,5 +1,5 @@
-/* @use "@/style/variables/font.scss" as font;
-
-body {
-  font-family: $font-HelveticaNeue;
-} */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
